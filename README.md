@@ -11,9 +11,15 @@ There are three stages to the project; students are currently at the third. Thus
 - `intbase.py`, the base class and enum definitions for the interpreter
 - `bparser.py`, a static `parser` class to parse Brewin programs
 
+- `interpreterv3.py`, which delegates work to: 
+  - `classv3.py`
+  - `objectv3.py`
+  - `type_valuev3.py`
+  - note we use the same `env_v2.py` as we did in P2
+
 - `interpreterv2.py`, a working top-level interpreter for project 2 that mostly delegates interpreting work to:
   - `classv2.py` which handles class, field, and method definitions
-  - `env2.py` which handles the program environment (a stack-based approach to accommodate local variables)
+  - `env_v2.py` which handles the program environment (a stack-based approach to accommodate local variables)
   - `objectv2.py` which additional implements inheritance and method calling; most of the code is here!
   - `type_valuev2.py` which additionally manage type checking
 
@@ -22,6 +28,8 @@ There are three stages to the project; students are currently at the third. Thus
   - `env1.py` which handles the program environment (a map from variables to values)
   - `objectv1.py` which handles operations on *objects*, which include statements, expressions, etc; most of the code is here!
   - `type_valuev1.py` which has classes to create type tags
+
+
 
 You can view the starter for [Project 1](https://github.com/UCLA-CS-131/spring-23-project-starter/releases/tag/p1).
 
